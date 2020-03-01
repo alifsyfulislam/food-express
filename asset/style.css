@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+body, html{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.purple_box,.purple_box_lead,.purple_box_thanks{
+    height: 250px;
+    width: 300px;
+    background-image: url("bg.jpg");
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.purple_box_lead{
+    background-image: url("bg2.jpg");
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.purple_box_thanks{
+    background-image: url("bg3.jpg");
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+.yes_btn,.no_btn{
+    height: 28px;
+    width: 111px;
+    top: 205px;
+}
+
+@keyframes zoomScale {
+    0%,100%{
+        transform: scale(1.05);
+    }
+    50%{
+        transform: scale(.95);
+    }
+}
+
+.yes_btn{
+    background-image: url("yes.png");
+    left: 27px;
+    animation: zoomScale .75s ease infinite;
+}
+
+.no_btn{
+    background-image: url("no.png");
+    left: 160px;
+    animation: zoomScale .75s ease reverse infinite;
+}
+
+.fade-in{
+    animation: fadein .25s ease ;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.user_number{
+    height: 30px;
+    width: 200px;
+    top: 95px;
+    left: 50px;
+    border-radius: 15px;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    background-color: #FFDE97;
+}
+
+.user_btn{
+    height: 35px;
+    width: 135px;
+    background-image: url("btn.png");
+    left: 83px;
+    top: 137px;
+    animation: zoomScale .75s ease infinite;
+}
+
+.van_bike,.van_bike2{
+    height: 63px;
+    width: 90px;
+    background-image: url("van.png");
+    top: 175px;
+    left: 0px;
+}
+
+
